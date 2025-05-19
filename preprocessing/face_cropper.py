@@ -4,7 +4,7 @@ import os
 
 def crop_faces_from_folder(frame_folder, output_folder):
     mp_face_detection = mp.solutions.face_detection
-    detector = mp_face_detection.FaceDetection(model_selection=0, min_detection_confidence=0.2)
+    detector = mp_face_detection.FaceDetection(model_selection=1, min_detection_confidence=0.2)
 
     os.makedirs(output_folder, exist_ok=True)
 
